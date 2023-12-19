@@ -8,7 +8,7 @@ function toggleMenu() {
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-  strings: ["Student 🧑", "Avid Reader 📖", "Hustler  🚵", "Adventurous Spirit 🗺️", ""],
+  strings: ["Student 🧑", "Reader 📖", "Hustler  🚵", "Traveller ✈️", "MAN 👨🏻"],
   loop: true,
   typeSpeed: 40,
   backSpeed: 15,
