@@ -87,6 +87,7 @@
     text-align: center;
   }
   .section__pic-container {
+    margin-top: 8vh;
     width: auto;
     height: 46vw;
     justify-content: center;
