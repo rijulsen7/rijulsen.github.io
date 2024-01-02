@@ -21,7 +21,8 @@ html {
 p {
   color: rgb(85, 85, 85);
   font-family: philosopher;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  text-align: center;
 }
 
 /* TRANSITION */
@@ -339,8 +340,8 @@ section {
 .about-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
   font-family: 'Rubik Doodle Shadow';
 }
 
