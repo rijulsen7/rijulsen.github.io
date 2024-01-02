@@ -214,6 +214,8 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+  font-family: dancing script;
+  margin: 1.2rem;
 }
 
 #socials-container {
@@ -329,6 +331,14 @@ section {
   height: 500px;
   width: 700px;
   margin: auto 0;
+}
+
+.about-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  font-family: 'Rubik Doodle Shadow';
 }
 
 /* INTERESTS SECTION */
