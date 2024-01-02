@@ -15,3 +15,12 @@ var typed = new Typed(".typing-text", {
   backDelay: 500,
 });
 // <!-- typed js effect ends --> 
+
+ // <!-- tilt js effect starts -->
+ VanillaTilt.init(document.querySelectorAll(".tilt"), {
+  max: 15,
+});
+// <!-- tilt js effect ends -->
+
+
+
