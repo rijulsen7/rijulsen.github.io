@@ -180,14 +180,6 @@ section {
   height: 80vh;
 }
 
-#particles-js {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-
 .section__pic-container {
   display: flex;
   height: 400px;
