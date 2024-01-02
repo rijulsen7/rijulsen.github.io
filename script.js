@@ -18,9 +18,19 @@ var typed = new Typed(".typing-text", {
 
  // <!-- tilt js effect starts -->
  VanillaTilt.init(document.querySelectorAll(".tilt"), {
-  max: 15,
+  max: 30,
 });
 // <!-- tilt js effect ends -->
 
-
+document.addEventListener('visibilitychange',
+    function () {
+        if (document.visibilityState === "visible") {
+            document.title = "Rijul Sen";
+            $("#favicon").attr("href", "assets/images/favicon.png");
+        }
+        else {
+            document.title = "Hey Come Back";
+            $("#favicon").attr("href", "assets/images/favhand.png");
+        }
+    });
 
