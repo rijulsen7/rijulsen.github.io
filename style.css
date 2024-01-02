@@ -1,7 +1,8 @@
 /* GENERAL */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
+@import url("https://fonts.googleapis.com/css?family=Rubik Doodle Shadow");
+@import url("https://fonts.googleapis.com/css?family=Dancing Script");
 * {
   margin: 0;
   padding: 0;
@@ -337,6 +338,7 @@ section {
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
+  font-family: 'Rubik Doodle Shadow';
 }
 
 .interests-details-container {
@@ -346,12 +348,15 @@ section {
 }
 
 .article-container {
+  color: black;
   display: flex;
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
+  font-size: 1.75rem;
+  font-family: dancing script;
 }
 
 article {
