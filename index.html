@@ -226,6 +226,22 @@
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
+
+
+      <form class="form" method="post" data-netlify="true" onsubmit="Submit">
+        <label>
+          <input type="text" placeholder="Name" name="name"/>
+        </label>
+        <label>
+          <input type="email" placeholder="Email Address" name="email"/>
+        </label>
+        <label>
+          <input class="message" type="message" placeholder="Enter Message" name="message"/>
+        </label>
+        <button class="send" type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> Send</button>
+      </form>
+
+
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
@@ -245,7 +261,7 @@
         </div>
       </div>
     </section>
-    <footer>
+    <footer class="footer">
       <nav>
         <div class="nav-links-container">
           <a href="#profile"><div class="logo2">Rijul Sen</div></a>
