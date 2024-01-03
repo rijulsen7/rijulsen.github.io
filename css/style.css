@@ -6,8 +6,6 @@
 @import url("https://fonts.googleapis.com/css?family=Philosopher");
 @import url("https://fonts.googleapis.com/css?family=Exo");
 
-
-
 * {
   margin: 0;
   padding: 0;
@@ -342,7 +340,7 @@ section {
   font-weight: 600;
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  font-family: 'Rubik Doodle Shadow';
+  font-family: "Rubik Doodle Shadow";
 }
 
 /* INTERESTS SECTION */
@@ -356,7 +354,7 @@ section {
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
-  font-family: 'Rubik Doodle Shadow';
+  font-family: "Rubik Doodle Shadow";
 }
 
 .interests-details-container {
@@ -388,7 +386,6 @@ article .icon {
 }
 
 /* CONTACT */
-
 
 #contact {
   display: flex;
@@ -434,7 +431,6 @@ form {
   width: 320px;
   margin: 0 auto;
 }
-
 
 .send,
 input {
@@ -528,11 +524,6 @@ button.fa {
   animation: pound 0.35s infinite alternate;
 }
 
-
-
-
-
-
 /* FOOTER SECTION */
 
 footer {
@@ -544,13 +535,12 @@ footer p {
   text-align: center;
 }
 
-.logo2{
+.logo2 {
   font-size: 2.75rem;
   font-family: dancing script;
   text-align: center;
   margin: 1.5rem;
 }
-
 
 .fa {
   color: #e90606;

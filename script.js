@@ -5,7 +5,6 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
-
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
   strings: ["Student 🧑", "Reader 📖", "Hustler  🚵", "Traveller ✈️", "MAN 👨🏻"],
@@ -14,23 +13,20 @@ var typed = new Typed(".typing-text", {
   backSpeed: 15,
   backDelay: 500,
 });
-// <!-- typed js effect ends --> 
+// <!-- typed js effect ends -->
 
- // <!-- tilt js effect starts -->
- VanillaTilt.init(document.querySelectorAll(".tilt"), {
+// <!-- tilt js effect starts -->
+VanillaTilt.init(document.querySelectorAll(".tilt"), {
   max: 30,
 });
 // <!-- tilt js effect ends -->
 
-document.addEventListener('visibilitychange',
-    function () {
-        if (document.visibilityState === "visible") {
-            document.title = "Rijul Sen";
-            $("#favicon").attr("href", "assets/images/favicon.png");
-        }
-        else {
-            document.title = "Hey Come Back";
-            $("#favicon").attr("href", "assets/images/favhand.png");
-        }
-    });
-
+document.addEventListener("visibilitychange", function () {
+  if (document.visibilityState === "visible") {
+    document.title = "Rijul Sen";
+    $("#favicon").attr("href", "assets/images/favicon.png");
+  } else {
+    document.title = "Hey Come Back";
+    $("#favicon").attr("href", "assets/images/favhand.png");
+  }
+});
