@@ -230,9 +230,6 @@
       
 
 
-      <!-- FILEPATH: /c:/Users/Rijul/OneDrive/Documents/GitHub/rijulsen.github.io/index.html -->
-
-      <!-- BEGIN: ed8c6549bwf9 -->
       <form class="form" method="post" data-netlify="true" onsubmit="Submit">
         <label>
           <input type="text" placeholder="Name" name="name"/>
@@ -245,49 +242,7 @@
         </label>
         <button class="send" type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> Send</button>
       </form>
-      <!-- END: ed8c6549bwf9 -->
 
-      <script>
-        function Submit(event) {
-          event.preventDefault();
-          // Perform form submission logic here
-          // If form submission is successful, show success toast
-          // If form submission fails, show error toast
-          showToast("Form submitted successfully!", "success");
-        }
-
-        function showToast(message, type) {
-          const toast = document.createElement("div");
-          toast.classList.add("toast", type);
-          toast.textContent = message;
-          document.body.appendChild(toast);
-
-          setTimeout(() => {
-            toast.remove();
-          }, 3000);
-        }
-      </script>
-
-      <style>
-        .toast {
-          position: fixed;
-          top: 20px;
-          right: 20px;
-          padding: 10px 20px;
-          border-radius: 5px;
-          color: #fff;
-          font-weight: bold;
-          z-index: 9999;
-        }
-
-        .success {
-          background-color: #4caf50;
-        }
-
-        .error {
-          background-color: #f44336;
-        }
-      </style>
 
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
