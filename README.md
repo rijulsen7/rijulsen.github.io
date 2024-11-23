@@ -10,13 +10,13 @@ Portfolio website build using HTML5, CSS3, JavaScript and jQuery.
 [![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)](https://github.com/jigar-sable/Portfolio-Website/search?l=css)&nbsp;
 [![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)](https://github.com/jigar-sable/Portfolio-Website/search?l=javascript)
 
-- 🔭 I’m currently working on [This Portfolio Web page](https://rijulsen.netlify.app/)
+- 🔭 My Website -- [Web page](https://rijulsen.netlify.app/)
 
-- 📝 I regularly write articles on [https://rijulsen7.blogspot.com/](https://rijulsen7.blogspot.com/)
+- 📝 I regularly write articles on -- [My Blogs](https://rijulsen7.blogspot.com/)
 
-- 📫 How to reach me **findrijul@gmail.com**
+- 📫 How to reach me -- **findrijul@gmail.com**
 
-- 📄 Know about my experiences [https://rijulsen.netlify.app/assets/resume.pdf](https://rijulsen.netlify.app/assets/resume.pdf)
+- 📄 Know about my experiences -- [https://rijulsen.netlify.app/assets/resume.pdf](https://rijulsen.netlify.app/#resume)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
