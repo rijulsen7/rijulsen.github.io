@@ -353,11 +353,10 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact section">
+    <section id="contact" class="contact section">
       <div class="container section-title">
         <div class="row">
-          <!-- Additional Information Section -->
-          <div class="mt-4" id="contact">
+          <div class="mt-4">
             <div class="portfolio-item shadow p-5 rounded">
               <div class="container mt-5">
                 <div class="text-center mb-5">
@@ -369,10 +368,8 @@
                 </div>
                 <div class="row justify-content-center">
                   <div class="col-lg-6 col-md-8 col-sm-10">
-                    <!-- Netlify Form Start -->
                     <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"
-                      action="/thank-you">
-                      <!-- Hidden Honeypot Field (Netlify Anti-Spam) -->
+                      action="/thank-you" id="contact-form">
                       <input type="hidden" name="form-name" value="contact" />
                       <p class="d-none">
                         <label>Don’t fill this out if you're human:
@@ -416,13 +413,14 @@
                         </div>
                       </div>
                       <!-- Netlify Recaptcha -->
-                      <div data-netlify-recaptcha="true" class="mb-3"></div>
+                      <div data-netlify-recaptcha="true" class="mb-3" id="recaptcha-container"></div>
+                      <div class="text-danger d-none" id="recaptcha-error">Please complete the CAPTCHA before
+                        submitting.</div>
                       <!-- Submit Button -->
                       <div class="text-center">
-                        <button type="submit" class="px-btn theme">Send Message</button>
+                        <button type="submit" class="px-btn theme" id="submit-button">Send Message</button>
                       </div>
                     </form>
-                    <!-- Netlify Form End -->
                   </div>
                 </div>
               </div>
@@ -431,6 +429,26 @@
         </div>
       </div>
     </section>
+
+    <script>
+      // Captcha validation logic
+      const form = document.getElementById('contact-form');
+      const submitButton = document.getElementById('submit-button');
+      const recaptchaError = document.getElementById('recaptcha-error');
+
+      form.addEventListener('submit', function (event) {
+        const recaptchaContainer = document.querySelector('[data-netlify-recaptcha]');
+        const isRecaptchaCompleted = recaptchaContainer.querySelector('iframe');
+
+        if (!isRecaptchaCompleted) {
+          event.preventDefault(); // Stop the form submission
+          recaptchaError.classList.remove('d-none'); // Show error message
+        } else {
+          recaptchaError.classList.add('d-none'); // Hide error message if completed
+        }
+      });
+    </script>
+
 
   </main>
 
