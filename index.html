@@ -15,9 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -351,103 +349,87 @@
         </div>
       </div>
     </section>
-
+    
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
-      <div class="container section-title">
-        <div class="row">
-          <div class="mt-4">
-            <div class="portfolio-item shadow p-5 rounded">
-              <div class="container mt-5">
-                <div class="text-center mb-5">
-                  <h2>Contact Me</h2>
-                  <p class="text-muted">
-                    Feel free to reach out for collaboration, inquiries, or just to
-                    say hello!
+<section class="contact section">
+  <div class="container section-title">
+    <div class="row">
+      <div class="mt-4" id="contact">
+        <div class="portfolio-item shadow p-5 rounded">
+          <div class="container mt-5">
+            <div class="text-center mb-5">
+              <h2>Contact Me</h2>
+              <p class="text-muted">
+                Feel free to reach out for collaboration, inquiries, or just to
+                say hello!
+              </p>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-6 col-md-8 col-sm-10">
+                <!-- Link the form to contact-form.php -->
+                <form
+                  name="contact"
+                  method="POST"
+                  action="contact-form.php" 
+                  id="contact-form"
+                >
+                  <input type="hidden" name="form-name" value="contact" />
+                  <p class="d-none">
+                    <label>Don’t fill this out if you're human:
+                      <input name="bot-field" />
+                    </label>
                   </p>
-                </div>
-                <div class="row justify-content-center">
-                  <div class="col-lg-6 col-md-8 col-sm-10">
-                    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"
-                      action="/thank-you" id="contact-form">
-                      <input type="hidden" name="form-name" value="contact" />
-                      <p class="d-none">
-                        <label>Don’t fill this out if you're human:
-                          <input name="bot-field" />
-                        </label>
-                      </p>
-                      <!-- Name -->
-                      <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name"
-                          required>
-                        <div class="invalid-feedback">
-                          Please enter your name.
-                        </div>
-                      </div>
-                      <!-- Email -->
-                      <div class="mb-3">
-                        <label for="email" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email"
-                          required>
-                        <div class="invalid-feedback">
-                          Please enter a valid email address.
-                        </div>
-                      </div>
-                      <!-- Subject -->
-                      <div class="mb-3">
-                        <label for="subject" class="form-label">Subject</label>
-                        <input type="text" class="form-control" id="subject" name="subject"
-                          placeholder="Enter the subject" required>
-                        <div class="invalid-feedback">
-                          Please enter a subject.
-                        </div>
-                      </div>
-                      <!-- Message -->
-                      <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" name="message" rows="4"
-                          placeholder="Enter your message" required></textarea>
-                        <div class="invalid-feedback">
-                          Please enter a message.
-                        </div>
-                      </div>
-                      <!-- Netlify Recaptcha -->
-                      <div data-netlify-recaptcha="true" class="mb-3" id="recaptcha-container"></div>
-                      <div class="text-danger d-none" id="recaptcha-error">Please complete the CAPTCHA before
-                        submitting.</div>
-                      <!-- Submit Button -->
-                      <div class="text-center">
-                        <button type="submit" class="px-btn theme" id="submit-button">Send Message</button>
-                      </div>
-                    </form>
+                  <!-- Name -->
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                    <div class="invalid-feedback">
+                      Please enter your name.
+                    </div>
                   </div>
-                </div>
+                  <!-- Email -->
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                    <div class="invalid-feedback">
+                      Please enter a valid email address.
+                    </div>
+                  </div>
+                  <!-- Subject -->
+                  <div class="mb-3">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter the subject" required>
+                    <div class="invalid-feedback">
+                      Please enter a subject.
+                    </div>
+                  </div>
+                  <!-- Message -->
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
+                    <div class="invalid-feedback">
+                      Please enter a message.
+                    </div>
+                  </div>
+                  <!-- reCAPTCHA -->
+                  <div class="mb-3">
+                    <div class="g-recaptcha" data-sitekey="6Le5gLwqAAAAAGT6bhqFhDP4Firu7KsCTZ-tTV-Z"></div>
+                  </div>
+                  <!-- Submit Button -->
+                  <div class="text-center">
+                    <button type="submit" class="px-btn theme">Send Message</button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <script>
-      // Captcha validation logic
-      const form = document.getElementById('contact-form');
-      const submitButton = document.getElementById('submit-button');
-      const recaptchaError = document.getElementById('recaptcha-error');
 
-      form.addEventListener('submit', function (event) {
-        const recaptchaContainer = document.querySelector('[data-netlify-recaptcha]');
-        const isRecaptchaCompleted = recaptchaContainer.querySelector('iframe');
-
-        if (!isRecaptchaCompleted) {
-          event.preventDefault(); // Stop the form submission
-          recaptchaError.classList.remove('d-none'); // Show error message
-        } else {
-          recaptchaError.classList.add('d-none'); // Hide error message if completed
-        }
-      });
-    </script>
 
 
   </main>
