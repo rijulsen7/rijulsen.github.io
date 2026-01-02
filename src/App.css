@@ -1,0 +1,123 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 60px 0;
+}
+
+/* BASE CARD */
+.card {
+  width: 340px;
+  border: 6px solid black;
+  background: #e9ead7;
+}
+
+/* HEADER */
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  background: white;
+}
+
+.profile {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 3px solid black;
+  background: #f2a65a;
+}
+
+.menu span {
+  display: block;
+  width: 20px;
+  height: 3px;
+  background: black;
+  margin: 4px 0;
+}
+
+.header-bottom {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 14px;
+  font-size: 12px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #3cff00;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+/* HERO */
+.hero {
+  background: white;
+}
+
+.hero-image {
+  height: 420px;
+  background: #d8c3a5;
+  border-bottom: 3px solid black;
+}
+
+.hero-quote {
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+}
+
+/* ABOUT */
+.about {
+  background: white;
+  padding: 16px;
+  font-size: 14px;
+}
+
+.highlight {
+  color: #f2a65a;
+  font-weight: bold;
+}
+
+.about-footer {
+  background: #f2a65a;
+  margin-top: 12px;
+  padding: 8px;
+  font-size: 11px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* SKILLS */
+.skills {
+  background: black;
+  color: #f2a65a;
+  padding: 16px;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px 0;
+}
+
+.skills li {
+  margin-bottom: 6px;
+}
+
+.skills button {
+  background: transparent;
+  border: 2px solid #f2a65a;
+  color: #f2a65a;
+  padding: 6px 10px;
+}
