@@ -1,13 +1,119 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>rijulsen.github.io</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ryan Sullivan – Portfolio</title>
+
+  <!-- Pixel font -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER CARD -->
+  <section class="header-card pixel-box">
+    <div class="header-main">
+      <div class="profile">
+        <img src="https://i.pravatar.cc/150?img=12" alt="Ryan">
+        <div>
+          <h1>Ryan Sullivan</h1>
+          <p>Product Designer</p>
+        </div>
+      </div>
+
+      <div class="burger" id="menuBtn">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="availability">
+        <span class="dot"></span>
+        Available for work
+      </div>
+
+      <div class="socials">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </div>
+    <!-- MENU OVERLAY -->
+<div class="menu-overlay" id="menuOverlay">
+  <div class="menu-box pixel-box">
+    
+    <div class="menu-header">
+      <div class="profile">
+        <img src="https://i.pravatar.cc/150?img=12" alt="Ryan">
+        <div>
+          <h1>Ryan Sullivan</h1>
+          <p>Product Designer</p>
+        </div>
+      </div>
+
+      <button class="close-btn" id="closeMenu">✕</button>
+    </div>
+
+    <nav class="menu-links">
+      <a href="#"><i class="fas fa-house"></i> Home</a>
+      <a href="#"><i class="fas fa-user"></i> About me</a>
+      <a href="#"><i class="fas fa-briefcase"></i> Works</a>
+      <a href="#"><i class="fas fa-phone"></i> Contact me</a>
+    </nav>
+
+    <div class="menu-footer">
+      <div class="socials">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+      <span class="talk">Let’s talk me →</span>
+    </div>
+
+  </div>
+</div>
+
+  </section>
+
+  <!-- HERO IMAGE -->
+  <section class="hero pixel-box">
+    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=900" alt="Hero">
+    <p class="quote">“I do what I love, and I love what I do”</p>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about pixel-box">
+    <p>
+      I'm <strong>Ryan Sullivan</strong>, a product designer dedicated to creating intuitive and engaging digital experiences.
+    </p>
+    <p>
+      Explore my <span class="highlight">works</span> to see how I blend creativity with usability, and feel free to reach out and collaborate on something great!
+    </p>
+
+    <div class="contact-bar">
+      <span><i class="fas fa-location-dot"></i> 3193 Gibson Run, NYC</span>
+      <span>name@company.com</span>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services pixel-box dark">
+    <ul>
+      <li><i class="fas fa-crown"></i> Product design</li>
+      <li><i class="fas fa-pen-ruler"></i> UI/UX design</li>
+      <li><i class="fas fa-palette"></i> Brand design</li>
+      <li><i class="fas fa-cube"></i> 3D animation</li>
+      <li><i class="fas fa-eye"></i> Visual identity</li>
+    </ul>
+
+    <button class="cta">Book a call</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
 </html>
